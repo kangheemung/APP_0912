@@ -1,0 +1,4 @@
+<br>
+<%@users.each do |user|%>
+    <%=link_to user.name,"/users.#{user.id}"%>さんの｜投稿数　<%=user.posts.count %><br>
+<% end %>
